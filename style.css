@@ -9,6 +9,8 @@
 
         --gray-800: #1E293b;
         --gray-600: #475569;
+        --gray-400:#94a3b8;
+        --gray-200: #e2e8f0;
         --purple: #7c3aed;
     }
 
@@ -51,7 +53,9 @@ font-size: 1.5625rem;
 
     display: flex;
     flex-direction: column;
-}
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    
 
 .input-box div {
 
@@ -60,7 +64,6 @@ font-size: 1.5625rem;
    align-items: center;
 
 }
-
 .login label {
 
     font-size: 0.875rem;
@@ -68,6 +71,18 @@ font-size: 1.5625rem;
     font-weight: 600;
 }
 
+.login input {
+
+    padding: 1rem 0.75rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 0.25rem;
+    color: var(--gray-800);
+}
+
+.login input::placeholder {
+
+    color: var(--gray-400);
+}
 
 .login a {
 
@@ -75,5 +90,11 @@ font-size: 1.5625rem;
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: 600;
+
+}
+
+.login a:hover {
+
+    text-decoration: underline;
 
 }
